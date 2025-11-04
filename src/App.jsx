@@ -8,7 +8,9 @@ import Services from './components/sections/services'
 import Explanation from './components/sections/explanation'
 import Testimonial from './components/sections/testimonials'
 import Catalogue from './components/sections/catalogue'
-
+import Card from './components/common/card'
+import Contact from './components/sections/contacts'
+import Footer from './components/layout/footer'
 
 function App() {
 
@@ -28,11 +30,30 @@ function App() {
       <SectionWrapper>
         <Explanation />
       </SectionWrapper>
+      
+      <SectionWrapper >
+        <Catalogue />
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+            <Card service="Towing & Recovery" cost="45454" image="/Classic car towed 1.jpg"/>
+            <Card service="Battery Jumpstart" cost="1555" image="/Mechanic unsplash.jpg"/>
+            <Card service="Tire Replacement" cost="1555" image="/Mechanic unsplash.jpg"/>
+            <Card service="Fuel Delivery" cost="1555" image="/Mechanic unsplash.jpg"/>
+            <Card service="Vehicle Unlocking" cost="1555" image="/Mechanic unsplash.jpg"/>
+            <Card service="Rescue & Pull-Out" cost="1555" image="/Mechanic unsplash.jpg"/>
+            <Card service="Technical Diagnosis" cost="1555" image="/Mechanic unsplash.jpg"/>
+            <Card service="Hybrid System Diagnostics" cost="1555" image="/Mechanic unsplash.jpg"/>
+            <Card service="Towing for Electric & Hybrid Vehicles" cost="1555" image="/EV car towed 1.jpg"/>
+            </div>
+       
+      </SectionWrapper>
       <SectionWrapper>
         <Testimonial />
       </SectionWrapper>
-      <SectionWrapper>
-        <Catalogue />
+      <SectionWrapper className="bg-cyan-600">
+        <Contact />
+      </SectionWrapper>
+      <SectionWrapper className="bg-cyan-950">
+        <Footer />
       </SectionWrapper>
     </>
   )

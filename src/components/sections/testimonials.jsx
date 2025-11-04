@@ -7,28 +7,28 @@ const testimonials = [
         name: "Josh Smith",
         role: "Manager of The New York Times",
         text: "They have a perfect touch for making something so professional, interesting and useful for a lot of people.We are very happy to work with them.",
-        image: "/test1.png",
+        image: "/Headshot1.jpg",
     },
     {
         id: 2,
         name: "Anna Johnson",
         role: "Marketing Director at Apple",
         text: "Their team is amazing! The design and quality were exactly what we envisioned. We couldn't have asked for a better partner.",
-        image: "/test2.png",
+        image: "/Headshot2.jpg",
     },
     {
         id: 3,
         name: "Michael Brown",
         role: "Architect at BuildX",
         text: "Great service and attention to detail. I would recommend them to anyone.I'm extremely satisfied with my experience.",
-        image: "/test3.png",
+        image: "/Headshot3.jpg",
     },
     {
         id: 4,
         name: "John Nolan",
         role: "Architect",
         text: "I highly recommend their services. They exceeded our expectations in every way.They are true professionals.",
-        image: "/test4.png"
+        image: "/Headshot4.jpg"
     },
 
     {
@@ -36,14 +36,14 @@ const testimonials = [
         name: "Sarah Lee",
         role: "CEO of DesignPro",
         text: "Their expertise in design is unmatched. They truly understand our vision. The end result was stunning.",
-        image: "/test5.png"
+        image: "/Headshot5.jpg"
     },
     {
         id: 6,
         name: "David Wilson",
         role: "Project Manager at BuildIt",
         text: "Their attention to detail and commitment to excellence is evident in every project. We are thrilled with the results.",
-        image: "/test6.png"
+        image: "/Headshot6.jpg"
     },
 
     {
@@ -51,7 +51,7 @@ const testimonials = [
         name: "Emily Davis",
         role: "Creative Director at ArtHouse",
         text: "Working with them was a fantastic experience. They brought our ideas to life beautifully. We look forward to future collaborations.",
-        image: "/test7.png"
+        image: "/Headshot7.jpg"
     }
 ];
 
@@ -119,7 +119,7 @@ const Testimonial = () => {
 
             <div className="flex justify-center shadow-md">
                 <img
-                    src="/care.png"
+                    src="/Customer Care 2.jpg"
                     alt="testimonial background"
                     className="w-full h-[400px] object-cover rounded-xl shadow-md"
                 />

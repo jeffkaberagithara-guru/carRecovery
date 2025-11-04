@@ -57,8 +57,7 @@ const Navbar = () => {
                         <li key={id}>
                             <button
                                 onClick={() => handleScroll(to)}
-                                className="cursor-pointer text-indigo-100 hover:text-indigo-100 transition focus:outline-none focus:ring-2 focus:ring-indigo-100 rounded"
-                            >
+                                className="cursor-pointer text-white hover:text-white hover:translate-y-1 transition text-lg transition focus:outline-none focus:ring-2 focus:ring-white rounded">
                                 {name}
                             </button>
                         </li>
@@ -71,8 +70,7 @@ const Navbar = () => {
                     aria-expanded={navOpen}
                     aria-controls="mobile-menu"
                     aria-label="Toggle menu"
-                    className="md:hidden cursor-pointer text-indigo-100 hover:text-indigo-100 text-2xl focus:outline-none focus:ring-2 focus:ring-indigo-100 rounded"
-                >
+                    className="md:hidden cursor-pointer text-white hover:text-white hover:translate-y-1 transition text-2xl focus:outline-none focus:ring-2 focus:ring-white rounded">
                     {navOpen ? <FaTimes /> : <FaBars />}
                 </button>
             </div>
@@ -82,14 +80,12 @@ const Navbar = () => {
                 <ul
                     id="mobile-menu"
                     ref={menuRef}
-                    className="md:hidden flex flex-col items-center space-y-6 bg-blue-800 py-6 shadow-md absolute top-16 right-0 w-full z-40"
-                >
+                    className="md:hidden flex flex-col items-center space-y-6 bg-blue-800 py-6 shadow-md absolute top-16 right-0 w-full z-40">
                     {links.map(({ id, name, to }) => (
                         <li key={id}>
                             <button
                                 onClick={() => handleScroll(to)}
-                                className="cursor-pointer text-indigo-100 hover:text-indigo-100 text-lg focus:outline-none focus:ring-2 focus:ring-indigo-100 rounded"
-                            >
+                                className="cursor-pointer text-white hover:text-white hover:translate-y-1 transition text-lg focus:outline-none focus:ring-2 focus:ring-white rounded">
                                 {name}
                             </button>
                         </li>
