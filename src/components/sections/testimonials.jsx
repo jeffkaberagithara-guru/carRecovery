@@ -4,53 +4,46 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 const testimonials = [
     {
         id: 1,
-        name: "Josh Smith",
-        role: "Manager of The New York Times",
-        text: "They have a perfect touch for making something so professional, interesting and useful for a lot of people.We are very happy to work with them.",
+        name: "John Doe",
+        text: "Flat tire sorted in minutes. Truly dependable.",
         image: "/Headshot1.jpg",
     },
     {
         id: 2,
-        name: "Anna Johnson",
-        role: "Marketing Director at Apple",
-        text: "Their team is amazing! The design and quality were exactly what we envisioned. We couldn't have asked for a better partner.",
+        name: "Jane Doe",
+        text: "Professional, quick and super friendly crew.",
         image: "/Headshot2.jpg",
     },
     {
         id: 3,
-        name: "Michael Brown",
-        role: "Architect at BuildX",
-        text: "Great service and attention to detail. I would recommend them to anyone.I'm extremely satisfied with my experience.",
+        name: "Gracy Smith",
+        text: "Smooth experience from start to finish. 10/10!",
         image: "/Headshot3.jpg",
     },
     {
         id: 4,
         name: "John Nolan",
-        role: "Architect",
-        text: "I highly recommend their services. They exceeded our expectations in every way.They are true professionals.",
+        text: "ResQAuto got to me in under 20 minutes. Lifesaver!.",
         image: "/Headshot4.jpg"
     },
 
     {
         id: 5,
-        name: "Sarah Lee",
-        role: "CEO of DesignPro",
-        text: "Their expertise in design is unmatched. They truly understand our vision. The end result was stunning.",
+        name: "Bob Smith",
+        text: "Affordable, efficient, and they really know their stuff.",
         image: "/Headshot5.jpg"
     },
     {
         id: 6,
-        name: "David Wilson",
-        role: "Project Manager at BuildIt",
-        text: "Their attention to detail and commitment to excellence is evident in every project. We are thrilled with the results.",
+        name: "Lee Kim",
+        text: "Never thought a towing service could be this fast and polite.",
         image: "/Headshot6.jpg"
     },
 
     {
         id: 7,
-        name: "Emily Davis",
-        role: "Creative Director at ArtHouse",
-        text: "Working with them was a fantastic experience. They brought our ideas to life beautifully. We look forward to future collaborations.",
+        name: "Patel Singh",
+        text: "They handled my classic car with so much care.",
         image: "/Headshot7.jpg"
     }
 ];
@@ -81,8 +74,8 @@ const Testimonial = () => {
         <section className="max-w-7xl mx-auto px-6 py-5 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
 
             <div>
-                <h2 className="text-4xl font-bold text-blue-950 mb-10">
-                    What People Are Saying About Us
+                <h2 className="text-4xl font-bold text-cyan-700 mb-10 transition-all duration-500 ease-in-out">
+                    Real Stories, Real Rescues
                 </h2>
 
                 <div className="flex items-center gap-4 mb-6 transition-all duration-500">
@@ -102,19 +95,15 @@ const Testimonial = () => {
                 </p>
 
                 <div className="flex items-center gap-4 mt-8">
-                    <button
-                        onClick={prevSlide}
-                        className="p-3 bg-orange-500 text-white hover:bg-orange-700 rounded-full transition"
-                    >
-                        <FaChevronLeft className="cursor-pointer" />
-                    </button>
-                    <button
-                        onClick={nextSlide}
-                        className="p-3 bg-orange-500 text-white hover:bg-orange-700 rounded-full transition"
-                    >
-                        <FaChevronRight className="cursor-pointer" />
-                    </button>
+                        <button onClick={prevSlide} className="p-3 rounded-full bg-linear-to-r from-cyan-600 to-cyan-700 text-white shadow-lg hover:shadow-cyan-400/50 hover:scale-110 transition-all duration-100 ease-in-out">
+                             <FaChevronLeft className="text-xl text-white" />
+                        </button>
+
+                        <button onClick={nextSlide} className="p-3 rounded-full bg-linear-to-r from-cyan-600 to-cyan-700 text-white shadow-lg hover:shadow-cyan-400/50 hover:scale-110 transition-all duration-100 ease-in-out">
+                             <FaChevronRight className="text-xl text-white" />
+                        </button>
                 </div>
+
             </div>
 
             <div className="flex justify-center shadow-md">

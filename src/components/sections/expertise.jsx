@@ -7,7 +7,7 @@ function Expertise() {
         <section className="container mx-auto py-7">
             <div className=" grid grid-cols-1 md:grid-cols-2 gap-8 items-center overflow-hidden mx-auto">
                 <div>
-                    <img src="/Classic car towed 1.jpg" alt="service photo" className="w-full h-auto object-cover rounded-3xl" />
+                    <img src="/Tow truck 4.jpg" alt="tow truck photo" className="w-full h-80 md:h-98 object-cover rounded-3xl shadow-md" />
                 </div>
 
                 <div className="container mx-auto">

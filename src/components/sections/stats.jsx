@@ -10,8 +10,8 @@ function Stats() {
                 <p className="text-black font-semibold">Customer satisfaction rate</p>
             </div>
             <div className="py-4">
-                <h1 className="text-3xl font-bold text-white">30</h1>
-                <p className="text-black font-semibold">Counties Covered</p>
+                <h1 className="text-3xl font-bold text-white">{"< 30 mins"}</h1>
+                <p className="text-black font-semibold">Average Response Time</p>
             </div>
 
         </div>

@@ -23,7 +23,7 @@ function Explanation() {
                 </div>
 
                 <div>
-                    <img src="/Electronic Issues unsplash.jpg" alt="Electician photo" className="w-full h-auto object-cover rounded-2xl" />
+                    <img src="/Electronic Issues unsplash.jpg" alt="Electician photo" className="w-full h-90 md:h-90 object-cover rounded-2xl" />
                 </div>
             </div>
 
