@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
+
 function Hero() {
     return (
         <section id="hero" className=" text-center flex items-center justify-center" style={{
-            backgroundImage: `linear-gradient(rgba(0, 14, 60, 0.85), rgba(0, 12, 61, 0.7)), url('/Tow truck1.jpg')`,
+            backgroundImage: `linear-gradient(rgba(1, 39, 59, 0.95), rgba(9, 82, 91, 0.9)), url('/Tow truck1.jpg')`,
             backgroundBlendMode: 'multiply',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
@@ -14,13 +16,15 @@ function Hero() {
                     </p>
 
                     <div className="flex gap-4  justify-center mt-8">
-                        <button className="px-6 py-3 border-2 border-cyan-600 text-cyan-400 font-semibold rounded-full hover:bg-cyan-600 hover:text-white transition">
-                             Hotline Number
+                        
+                        <Link to="/signup">
+                            <button className="px-6 py-3 border-2 border-cyan-600 text-cyan-400 font-semibold rounded-full hover:bg-cyan-600 hover:text-white transition">
+                             Register
                          </button>
+                        </Link>
+                        
 
-                        <button className="px-6 py-3 border-2 border-cyan-600 text-cyan-400 font-semibold rounded-full hover:bg-cyan-600 hover:text-white transition">
-                             Request a Service
-                        </button>
+                        
                         
                     </div>
                 </div>

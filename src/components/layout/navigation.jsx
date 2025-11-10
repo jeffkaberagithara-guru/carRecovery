@@ -57,7 +57,7 @@ const Navbar = () => {
                         <li key={id}>
                             <button
                                 onClick={() => handleScroll(to)}
-                                className="cursor-pointer text-white hover:text-white hover:translate-y-1 transition text-lg transition focus:outline-none focus:ring-2 focus:ring-white rounded">
+                                className="cursor-pointer text-red-800 hover:text-cyan-600 font-semibold hover:translate-y-1 transition text-lg transition focus:outline-none focus:ring-2 focus:ring-white rounded">
                                 {name}
                             </button>
                         </li>
@@ -70,7 +70,7 @@ const Navbar = () => {
                     aria-expanded={navOpen}
                     aria-controls="mobile-menu"
                     aria-label="Toggle menu"
-                    className="md:hidden cursor-pointer text-white hover:text-white hover:translate-y-1 transition text-2xl focus:outline-none focus:ring-2 focus:ring-white rounded">
+                    className="md:hidden cursor-pointer text-white font-semibold hover:text-white hover:translate-y-1 transition text-2xl focus:outline-none focus:ring-2 focus:ring-white rounded">
                     {navOpen ? <FaTimes /> : <FaBars />}
                 </button>
             </div>
