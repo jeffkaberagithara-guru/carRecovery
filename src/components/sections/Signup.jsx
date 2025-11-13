@@ -30,31 +30,83 @@ function Signup() {
 
     return (
 
-        <section className=" bg-gray-500 min-h-screen flex items-center justify-center ">
-            <div className=" w-100 mx-auto mt-20 p-6 bg-blue-950  rounded-lg shadow-md ">
-                <form onSubmit={handleSignup}>
-                    <h1 className="text-orange-500 font-bold text-center text-2xl">Sign Up</h1> <br />
-                    <div className="flex items-center gap-4">
-                        <FaUser className="text-sm text-orange-500" />
-                        <input type="text" placeholder="Username" value={name} onChange={(e) => setName(e.target.value)} className="p-3 border border-gray-300 outline-none bg-white w-full mb-4 rounded-md" required /> <br />
-                    </div>
-                    <div className="flex items-center gap-4">
-                        <MdEmail className="text-sm text-orange-500" />
-                        <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} className="p-3 border border-gray-300 outline-none bg-white w-full mb-4 rounded-md" required /> <br />
-                    </div>
+        <section className="min-h-screen flex items-center justify-center bg-linear-to-br from-emerald-50 to-cyan-50">
+    <div className="w-full max-w-md mx-auto p-8 bg-white rounded-2xl shadow-lg border border-gray-100">
+        <form onSubmit={handleSignup}>
+            <h1 className="text-slate-700 font-bold text-center text-3xl mb-2">Join Us</h1>
+            <p className="text-gray-500 text-center mb-8">Create your account to get started</p>
+            
+            <div className="space-y-5">
+                {/* Username Input */}
+                <div className="flex items-center gap-3 p-3 border border-gray-200 rounded-xl bg-gray-50 hover:bg-white transition-all duration-200 focus-within:border-emerald-400 focus-within:bg-white focus-within:ring-2 focus-within:ring-emerald-100">
+                    <FaUser className="text-lg text-emerald-500" />
+                    <input 
+                        type="text" 
+                        placeholder="Enter your full name" 
+                        value={name} 
+                        onChange={(e) => setName(e.target.value)} 
+                        className="outline-none bg-transparent w-full text-gray-700 placeholder-gray-400"
+                        required 
+                    />
+                </div>
 
-                    <div className="flex items-center gap-4">
-                        <FaLock className="text-sm text-orange-500" />
-                        <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} className="p-3 border border-gray-300 outline-none bg-white w-full mb-4 rounded-md" required /> <br />
-                    </div>
+                {/* Email Input */}
+                <div className="flex items-center gap-3 p-3 border border-gray-200 rounded-xl bg-gray-50 hover:bg-white transition-all duration-200 focus-within:border-emerald-400 focus-within:bg-white focus-within:ring-2 focus-within:ring-emerald-100">
+                    <MdEmail className="text-lg text-emerald-500" />
+                    <input 
+                        type="email" 
+                        placeholder="Enter your email address" 
+                        value={email} 
+                        onChange={(e) => setEmail(e.target.value)} 
+                        className="outline-none bg-transparent w-full text-gray-700 placeholder-gray-400"
+                        required 
+                    />
+                </div>
 
+                {/* Password Input */}
+                <div className="flex items-center gap-3 p-3 border border-gray-200 rounded-xl bg-gray-50 hover:bg-white transition-all duration-200 focus-within:border-emerald-400 focus-within:bg-white focus-within:ring-2 focus-within:ring-emerald-100">
+                    <FaLock className="text-lg text-emerald-500" />
+                    <input 
+                        type="password" 
+                        placeholder="Create a secure password" 
+                        value={password} 
+                        onChange={(e) => setPassword(e.target.value)} 
+                        className="outline-none bg-transparent w-full text-gray-700 placeholder-gray-400"
+                        required 
+                    />
+                </div>
 
+                {/* Terms Checkbox */}
+                <div className="flex items-center gap-3 p-2">
+                    <input 
+                        type="checkbox" 
+                        className="h-4 w-4 text-emerald-500 focus:ring-emerald-400 border-gray-300 rounded"
+                    />
+                    <label className="text-sm text-gray-600">
+                        I agree to the <span className="text-emerald-500 hover:text-emerald-600 cursor-pointer">Terms</span> and <span className="text-emerald-500 hover:text-emerald-600 cursor-pointer">Privacy Policy</span>
+                    </label>
+                </div>
 
-                    <button type="submit" className="mt-4 p-3 w-full bg-orange-500 hover:bg-orange-700 cursor-pointer text-white rounded-md">Sign  Up</button>
-                </form>
-                <p className="text-center text-white mt-4">Already have an account? <Link to="/login" className="text-orange-500 hover:underline">Log in</Link></p>
+                {/* Sign Up Button */}
+                <button 
+                    type="submit" 
+                    className="w-full py-3.5 bg-linear-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200 focus:ring-2 focus:ring-emerald-300 focus:ring-offset-2"
+                >
+                    Create Account
+                </button>
             </div>
-        </section>
+        </form>
+        
+        <div className="mt-8 pt-6 border-t border-gray-200">
+            <p className="text-center text-gray-600">
+                Already have an account?{" "}
+                <Link to="/login" className="text-emerald-500 hover:text-emerald-600 font-semibold hover:underline transition-colors duration-200">
+                    Sign in here
+                </Link>
+            </p>
+        </div>
+    </div>
+</section>
 
 
     )

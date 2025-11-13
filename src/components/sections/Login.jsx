@@ -31,26 +31,56 @@ function Login() {
 
 
     return (
-        <section className=" bg-gray-500 min-h-screen flex items-center justify-center ">
-            <div className=" w-100 mx-auto mt-20 p-6 bg-blue-950  rounded-lg shadow-md ">
-                <form onSubmit={handleLogin}>
-                    <h1 className="text-orange-500 font-bold text-center text-2xl">Log In</h1> <br />
-                    <div className="flex items-center gap-4">
-                        <MdEmail className="text-sm text-orange-500" />
-                        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" className="p-3 border border-gray-300 outline-none bg-white w-full mb-4 rounded-md" required /> <br />
-                    </div>
+        <section className="min-h-screen flex items-center justify-center bg-linear-to-br from-slate-50 to-blue-50">
+    <div className="w-full max-w-md mx-auto p-8 bg-white rounded-2xl shadow-lg border border-gray-100">
+        <form onSubmit={handleLogin}>
+            <h1 className="text-slate-700 font-bold text-center text-3xl mb-8">Welcome Back</h1>
+            
+            <div className="space-y-6">
+                {/* Email Input */}
+                <div className="flex items-center gap-3 p-3 border border-gray-200 rounded-xl bg-gray-50 hover:bg-white transition-colors duration-200 focus-within:border-blue-400 focus-within:bg-white focus-within:ring-2 focus-within:ring-blue-100">
+                    <MdEmail className="text-lg text-blue-500" />
+                    <input 
+                        type="email" 
+                        value={email} 
+                        onChange={(e) => setEmail(e.target.value)} 
+                        placeholder="Enter your email" 
+                        className="outline-none bg-transparent w-full text-gray-700 placeholder-gray-400"
+                        required 
+                    />
+                </div>
 
-                    <div className="flex items-center gap-4">
-                        <FaLock className="text-sm text-orange-500" />
-                        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" className="p-3 border border-gray-300 outline-none bg-white w-full mb-4 rounded-md" required /> <br />
-                    </div>
+                {/* Password Input */}
+                <div className="flex items-center gap-3 p-3 border border-gray-200 rounded-xl bg-gray-50 hover:bg-white transition-colors duration-200 focus-within:border-blue-400 focus-within:bg-white focus-within:ring-2 focus-within:ring-blue-100">
+                    <FaLock className="text-lg text-blue-500" />
+                    <input 
+                        type="password" 
+                        value={password} 
+                        onChange={(e) => setPassword(e.target.value)} 
+                        placeholder="Enter your password" 
+                        className="outline-none bg-transparent w-full text-gray-700 placeholder-gray-400"
+                        required 
+                    />
+                </div>
 
-                    <button type="submit" className="mt-4 p-3 w-full bg-orange-500 hover:bg-orange-700 cursor-pointer text-white rounded-md">Log In</button>
-                </form>
-                <p className="text-center text-white mt-4">Don't have an account? <Link to="/signup" className="text-orange-500 hover:underline">Sign up</Link></p>
+                {/* Login Button */}
+                <button 
+                    type="submit" 
+                    className="w-full py-3 bg-linear-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200 focus:ring-2 focus:ring-blue-300 focus:ring-offset-2"
+                >
+                    Sign In
+                </button>
             </div>
-        </section>
-
+        </form>
+        
+        <p className="text-center text-gray-600 mt-6">
+            Don't have an account?{" "}
+            <Link to="/signup" className="text-blue-500 hover:text-blue-600 font-semibold hover:underline transition-colors duration-200">
+                Create account
+            </Link>
+        </p>
+    </div>
+</section>
 
 
 
