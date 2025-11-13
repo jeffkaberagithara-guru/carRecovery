@@ -6,7 +6,7 @@ import { FaUser, FaLock } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md'
 
 function Signup() {
-    const [userName, setUsername] = useState('')
+    const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const navigate = useNavigate();
@@ -15,7 +15,7 @@ function Signup() {
     const handleSignup = async (e) => {
         try {
             e.preventDefault();
-            await axios.post('http://localhost:3000/signup', { userName, email, password });
+            await axios.post('https://carrecovery-credentials.onrender.com/register', { name, email, password });
             alert('You have sucesfully Registered Login now');
             navigate('/login')
 
@@ -36,7 +36,7 @@ function Signup() {
                     <h1 className="text-orange-500 font-bold text-center text-2xl">Sign Up</h1> <br />
                     <div className="flex items-center gap-4">
                         <FaUser className="text-sm text-orange-500" />
-                        <input type="text" placeholder="Username" value={userName} onChange={(e) => setUsername(e.target.value)} className="p-3 border border-gray-300 outline-none bg-white w-full mb-4 rounded-md" required /> <br />
+                        <input type="text" placeholder="Username" value={name} onChange={(e) => setName(e.target.value)} className="p-3 border border-gray-300 outline-none bg-white w-full mb-4 rounded-md" required /> <br />
                     </div>
                     <div className="flex items-center gap-4">
                         <MdEmail className="text-sm text-orange-500" />

@@ -16,7 +16,7 @@ function Login() {
     const handleLogin = async (e) => {
         try {
             e.preventDefault()
-            const res = await axios.post('http://localhost:3000/login', { email, password });
+            const res = await axios.post('https://carrecovery-credentials.onrender.com/login', { email, password });
             // storing the generated token in the local storage for easy accessibility
             localStorage.setItem('token', res.data.token);
             alert('You have sucessfully loged in');

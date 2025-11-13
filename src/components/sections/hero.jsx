@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Hero() {
     return (
-        <section id="hero" className=" text-center flex items-center justify-center" style={{
+        <section id="hero" className="relative text-center flex items-center justify-center" style={{
             backgroundImage: `linear-gradient(rgba(1, 39, 59, 0.95), rgba(9, 82, 91, 0.9)), url('/Tow truck1.jpg')`,
             backgroundBlendMode: 'multiply',
             backgroundSize: 'cover',
