@@ -4,7 +4,6 @@ import Hero from './components/sections/hero'
 import Stats from './components/sections/stats'
 import SectionWrapper from './components/common/wrapper'
 import Expertise from './components/sections/expertise'
-import About from './components/sections/about'
 import Services from './components/sections/services'
 import Explanation from './components/sections/explanation'
 import Testimonial from './components/sections/testimonials'
@@ -34,10 +33,6 @@ function App() {
 
           <SectionWrapper>
             <Expertise />
-          </SectionWrapper>
-
-          <SectionWrapper>
-            <About />
           </SectionWrapper>
 
           <SectionWrapper>
