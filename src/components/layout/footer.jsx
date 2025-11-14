@@ -37,13 +37,13 @@ function Footer() {
               <FcServices className="text-2xl" /> Our Services
             </h2>
             <ul>
-              <li className="my-2 cursor-pointer hover:text-cyan-500 hover:-translate-y-1 hover:scale-105">
+              <li className="my-2 cursor-pointer hover:text-cyan-600 hover:-translate-y-1 hover:scale-105">
                 Emergency Assistance
               </li>
-              <li className="my-2 cursor-pointer hover:text-cyan-500 hover:-translate-y-1 hover:scale-105">
+              <li className="my-2 cursor-pointer hover:text-cyan-600 hover:-translate-y-1 hover:scale-105">
                 Rescue & Recovery
               </li>
-              <li className="my-2 cursor-pointer hover:text-cyan-500 hover:-translate-y-1 hover:scale-105">
+              <li className="my-2 cursor-pointer hover:text-cyan-600 hover:-translate-y-1 hover:scale-105">
                 Maintenance & Inspection
               </li>
             </ul>
@@ -54,13 +54,13 @@ function Footer() {
               <FaBriefcase className="text-cyan-600 text-xl" /> Company
             </h2>
             <ul>
-              <li className="my-2 cursor-pointer hover:text-cyan-500 hover:-translate-y-1 hover:scale-105">
+              <li className="my-2 cursor-pointer hover:text-cyan-600 hover:-translate-y-1 hover:scale-105">
                 Careers
               </li>
-              <li className="my-2 cursor-pointer hover:text-cyan-500 hover:-translate-y-1 hover:scale-105">
+              <li className="my-2 cursor-pointer hover:text-cyan-600 hover:-translate-y-1 hover:scale-105">
                 Privacy Policy
               </li>
-              <li className="my-2 cursor-pointer hover:text-cyan-500 hover:-translate-y-1 hover:scale-105">
+              <li className="my-2 cursor-pointer hover:text-cyan-600 hover:-translate-y-1 hover:scale-105">
                 About Us
               </li>
             </ul>
@@ -72,13 +72,13 @@ function Footer() {
               Contact Us
             </h2>
             <ul>
-              <li className="my-2 cursor-pointer hover:text-cyan-500 hover:-translate-y-1 hover:scale-105">
+              <li className="my-2 cursor-pointer hover:text-cyan-600 hover:-translate-y-1 hover:scale-105">
                 Phone
               </li>
-              <li className="my-2 cursor-pointer hover:text-cyan-500 hover:-translate-y-1 hover:scale-105">
+              <li className="my-2 cursor-pointer hover:text-cyan-600 hover:-translate-y-1 hover:scale-105">
                 E-mail
               </li>
-              <li className="my-2 cursor-pointer hover:text-cyan-500 hover:-translate-y-1 hover:scale-105">
+              <li className="my-2 cursor-pointer hover:text-cyan-600 hover:-translate-y-1 hover:scale-105">
                 Location
               </li>
             </ul>
@@ -90,13 +90,13 @@ function Footer() {
               Quick Links
             </h2>
             <ul>
-              <li className="my-2 cursor-pointer hover:text-cyan-500 hover:-translate-y-1 hover:scale-105">
+              <li className="my-2 cursor-pointer hover:text-cyan-600 hover:-translate-y-1 hover:scale-105">
                 FAQ
               </li>
-              <li className="my-2 cursor-pointer hover:text-cyan-500 hover:-translate-y-1 hover:scale-105">
+              <li className="my-2 cursor-pointer hover:text-cyan-600 hover:-translate-y-1 hover:scale-105">
                 Help Center
               </li>
-              <li className="my-2 cursor-pointer hover:text-cyan-500 hover:-translate-y-1 hover:scale-105">
+              <li className="my-2 cursor-pointer hover:text-cyan-600 hover:-translate-y-1 hover:scale-105">
                 Terms of Service
               </li>
             </ul>
